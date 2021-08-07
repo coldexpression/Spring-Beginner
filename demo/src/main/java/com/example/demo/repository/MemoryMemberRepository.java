@@ -7,7 +7,7 @@ import java.util.*;
 
 // 실제 구현부 //
 
-@Repository // Spring 컨테이너가 @Repository를 보고 Repository로 등록한다. //
+// @Repository // Spring 컨테이너가 @Repository를 보고 Repository로 등록한다. //
 public class MemoryMemberRepository implements MemberRepository {
 
     private static Map<Long, Member> store = new HashMap<>();

@@ -9,12 +9,12 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
-@Service // Spring 컨테이너가 @Service를 보고 Service로 등록한다. //
+// @Service // Spring 컨테이너가 @Service를 보고 Service로 등록한다. //
 public class MemberService {
     // 테스트 케이스 생성 단축 키 [Ctrl + Shift + T]
     private final MemberRepository memberRepository;
 
-    @Autowired
+    // @Autowired
     public MemberService(MemberRepository memberRepository) {
         this.memberRepository = memberRepository;
     }
