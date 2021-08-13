@@ -5,11 +5,13 @@ import com.example.demo.repository.MemberRepository;
 import com.example.demo.repository.MemoryMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 import java.util.Optional;
 
 // @Service // Spring 컨테이너가 @Service를 보고 Service로 등록한다. //
+@Transactional
 public class MemberService {
     // 테스트 케이스 생성 단축 키 [Ctrl + Shift + T]
     private final MemberRepository memberRepository;
